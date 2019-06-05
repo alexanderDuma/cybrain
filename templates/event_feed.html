@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title>הזנת דיווח</title>
+</head>
+<body dir="rtl">
+
+<div class="container login-container">
+            <div class="row">
+                <div class="col-md-6 login-form-1">
+                    <h3>הזן דיווח</h3>
+                    <form action="/feed_event" method="post">
+                        <div class="form-group">
+                            <h4>יריב</h4>
+                            <input name="adv_origin" type="text" class="form-control" placeholder="* מקור" value="" />
+                            <input name="adv_orga" type="text" class="form-control" placeholder="ארגון" value="" />
+                            <input name="adv_camp" type="text" class="form-control" placeholder="מערך" value="" />
+                        </div>
+                        <div class="form-group">
+                            <h4>נתקף</h4>
+                            <input name="trgt_sector" type="text" class="form-control" placeholder="* מגזר" value="" />
+                            <input name="trgt_name" type="text" class="form-control" placeholder="שם חברה" value="" />
+                            <select name="trgt_israeli" size="2">
+                                <h5>האם הנתקף ישראלי?</h5>
+                                  <option value="true">כן</option>
+                                  <option value="false">לא</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <h4>פרטים נוספים</h4>
+                             <input type="date" name="date">
+                            <input name="ref" type="text" class="form-control" placeholder="סימוכין" value="" />
+                            <input name="details" type="text" class="form-control" placeholder="פירוט" value="" />
+                            <select name="event_type" size="3">
+                                <h5>סוג</h5>
+                                  <option value="אל הנכס">אל הנכס</option>
+                                  <option value="בנכס">בנכס</option>
+                                  <option value="אחר">אחר</option>
+                            </select>
+                            <input name="reporter" type="text" class="form-control" placeholder="מדווח" value="" />
+                                                    <div class="form-group">
+                                                        <input type="submit" class="btnSubmit"/>
+                                                    </div>
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+    </div>
+    </body>
+</html>
